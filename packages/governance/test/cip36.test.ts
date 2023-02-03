@@ -14,8 +14,10 @@ describe('cip36', () => {
             weight: 1
           }
         ],
+        paymentAddress: Cardano.Address(
+          'addr_test1qprhw4s70k0vzyhvxp6h97hvrtlkrlcvlmtgmaxdtjz87xrjkctk27ypuv9dzlzxusqse89naweygpjn5dxnygvus05sdq9h07'
+        ),
         purpose: cip36.VotingPurpose.CATALYST,
-        paymentAddress: Cardano.Address('addr_test1qprhw4s70k0vzyhvxp6h97hvrtlkrlcvlmtgmaxdtjz87xrjkctk27ypuv9dzlzxusqse89naweygpjn5dxnygvus05sdq9h07'),
         stakeKey: Cardano.Ed25519PublicKey('e3cd2404c84de65f96918f18d5b445bcb933a7cda18eeded7945dd191e432369')
       };
       const getNonce = (metadata: Cardano.TxMetadata) =>
@@ -32,11 +34,13 @@ describe('cip36', () => {
           {
             CIP36voteKey: Cardano.Ed25519PublicKey('0036ef3e1f0d3f5989e2d155ea54bdb2a72c4c456ccb959af4c94868f473f5a0'),
             weight: 1
-          },
+          }
         ],
         nonce: 1234,
+        paymentAddress: Cardano.Address(
+          'addr_test1qprhw4s70k0vzyhvxp6h97hvrtlkrlcvlmtgmaxdtjz87xrjkctk27ypuv9dzlzxusqse89naweygpjn5dxnygvus05sdq9h07'
+        ),
         purpose: cip36.VotingPurpose.CATALYST,
-        paymentAddress: Cardano.Address('addr_test1qprhw4s70k0vzyhvxp6h97hvrtlkrlcvlmtgmaxdtjz87xrjkctk27ypuv9dzlzxusqse89naweygpjn5dxnygvus05sdq9h07'),
         stakeKey: Cardano.Ed25519PublicKey('e3cd2404c84de65f96918f18d5b445bcb933a7cda18eeded7945dd191e432369')
       });
       expect(

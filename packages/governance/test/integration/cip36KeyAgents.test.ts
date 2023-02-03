@@ -49,8 +49,8 @@ describe('cip36', () => {
       ];
       const votingRegistrationMetadata: Cardano.TxMetadata = cip36.metadataBuilder.buildVotingRegistration({
         delegations,
-        purpose: cip36.VotingPurpose.CATALYST,
         paymentAddress,
+        purpose: cip36.VotingPurpose.CATALYST,
         stakeKey
       });
       const signedVotingRegistrationMetadata: Cardano.TxMetadata = await cip36.metadataBuilder.signVotingRegistration(
