@@ -31,7 +31,7 @@ describe('cip36', () => {
           0, // chain as per cip36
           0 // address_index as per cip36
         ]),
-        votingKeyAgent.bip32Ed25519
+        cip36VoteKeyAgent.bip32Ed25519
       );
     });
 

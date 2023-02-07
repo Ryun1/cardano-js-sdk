@@ -58,7 +58,6 @@ describe('cip36', () => {
           const privateStakeKey = Crypto.Ed25519PrivateNormalKeyHex(
             '852fa5d17df3efdfdcd6dac53ec9fe5593f3c0bd7cadb3c2af76c7e15dfa8a5c'
           );
-
           return bip32Ed25519.sign(privateStakeKey, blob);
         }
       });
